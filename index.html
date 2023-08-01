@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Search Engine Optimisation -->
+    <meta charset="UTF-8">  
+    <!-- Webpage Sizesy -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is description">
+    <meta name="keywords" contents="html, html tutorials, web development">
+    <title>OTT Platform</title>
+    <!-- This is how you include external CSS file -->
+    <!-- <link rel="stylesheet" href="/Dada_Dad/Dada_Dad.CSS"> -->
+    <!-- This is how you include java script -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  
+
+}
+html{
+  scroll-behavior: smooth;
+}
+mfp-hide{
+  display: none !important;
+}
+
+
+.navbar{
+  display: flex;
+  align-items: center;
+  
+  position: sticky;
+  top: 0;
+  cursor: pointer;
+  
+}
+.background{
+  background: rgba(0, 0, 0, 0.7) url('/img.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
+
+}
+.leftnav{ 
+  width: 25%;
+    padding: 12px 8px;
+    /* margin: 4px 22px; */
+  
+}
+.logo{
+       color: rgb(0, 255, 55);
+      
+}
+.logotext{
+    color: white;
+    
+}
+/* .midnav{ 
+  
+  width: 70%;
+ 
+} */
+
+.nav-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-list li{
+  list-style: none;
+  padding: 20px;
+}
+.navbar li a{
+    color: white;
+    padding:11px;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.navbar li a:hover ,.navbar li a.active{
+    text-decoration: underline;
+    color: gray;
+}
+.rightnav{
+    width: 30%;
+    text-align: right;
+    padding: 0 23px;
+}
+#search{
+  padding:5px;
+  font-size:17px;
+  border: 2px solid gray;
+  border-radius: 9px;
+}
+.btn{
+    padding:8px 20px;
+    margin: 7px 3px;
+    border: 2px solid white;
+    border-radius: 8px;
+    font-size: 18px;
+    background: none;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;;
+
+}
+.btn-sm{
+padding: 6px 10px;
+font-size: 16px;
+}
+.btn:hover{
+    background-color: gray;
+}
+
+/* .line{
+    top: 60px;
+} */
+.slide-show{
+  padding:0px 300px;
+}
+/* .slideshow-container {
+    max-width: 100px;
+    position: relative;
+    margin: auto;
+  } */
+  .slideshow-container img{
+    border: 8px solid white;
+    border-radius: 20px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  .slideshow-button{
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 459px;
+    right: 324px;
+    
+   
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 300px;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 25px;
+    /* padding: 0px 18px; */
+    position: absolute;
+    /* bottom: -462px; */
+    width: 100%;
+    text-align: center;
+    top: 475px;
+    left:0px;
+}
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 92px 20px;
+    position: absolute;
+    top: 0;
+  }
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+    
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+  .container {
+    background-color: #151515;
+    min-height: calc(100vh - 50px);
+    color: white;
+  }
+  
+  /* .content-container {
+    margin-left: 50px;
+  }
+   */
+ 
+
+  .movie-list-container {
+    padding: 0 20px;
+  }
+  .movie-list-title{
+    color:white;
+  }
+  
+  .movie-list-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .movie-list {
+    display: flex;
+    align-items: center;
+    height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
+  }
+  
+  .movie-list-item {
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .movie-list-item:hover .movie-list-item-img {
+    transform: scale(1.2);
+    margin: 0 30px;
+    opacity: 0.5;
+  }
+  
+  .movie-list-item:hover .movie-list-item-title,
+  .movie-list-item:hover .movie-list-item-desc,
+  .movie-list-item:hover .movie-list-item-button {
+    opacity: 1;
+  }
+  
+  .movie-list-item-img {
+    transition: all 1s ease-in-out;
+    width: 270px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 20px;
+  }
+  
+  .movie-list-item-title {
+    background-color: #333;
+    padding: 0 10px;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 10%;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .movie-list-item-desc {
+    background-color: #333;
+    padding: 10px;
+    font-size: 14px;
+    position: absolute;
+    top: 30%;
+    left: 50px;
+    width: 230px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  
+  .movie-list-item-button {
+    padding: 10px;
+    background-color: #4dbf00;
+    color: white;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    opacity: 0;
+    transition: 1s all ease-in-out;
+  }
+  .arrow {
+    font-size: 120px;
+    position: absolute;
+    top: 90px;
+    right: 0;
+    color: lightgray;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .container.active {
+    background-color: white;
+  }
+  
+  .movie-list-title.active {
+    color: black;
+  }
+
+  .about{
+    color: white;
+    max-width: 100%;
+    display: flex;
+  }
+
+  .firstHalf{
+    width: 50%;
+   
+    font-size: 20px;
+  }
+
+  .abouttitle{
+    text-decoration: underline;
+    font-size: 28px;
+    padding: 0px 235px;
+    
+  }
+  .abouttext{
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+.verticalline{
+  border-left: 4px solid white;
+  height: 323px;
+  
+}
+.secondHalf{
+  width: 50%;
+  text-align: center;
+}
+.contacttitle{
+    text-decoration: underline;
+    font-size: 28px;
+    padding: 0px 235px;
+    }
+    .form{
+      max-width: 63%;
+      margin: 4px auto;
+  }
+    .form-input{
+      margin: 4px 0;
+       width: 100%; 
+      padding: 7px;
+      font-size: 19px;
+      border: 2px solid gray;
+      border-radius: 10px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .btn-dark{
+      color: white;
+      border: 2px solid gray;
+  
+  }
+  .text-footer{
+    text-align: center;
+    padding: 3px 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: black;
+}
+  
+    </style>
+</head>
+<body>
+<nav class="navbar background">
+    <div class="leftnav">
+           <h1 class="logo">Dhada_Dhad</h1>
+           <div class="logotext">
+           <em>An Innovative OTT Platform </em>
+           </div>
+    </div>
+    <div class="midnav">
+           <ul class="nav-list">
+                <li><a href="#home" >Home</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#music">Music</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact us</a></li>
+            </ul>
+    </div>
+</div>
+        <div class="rightnav">
+            <input type="text" name="Search" id="search">
+            <button class="btn btn-sm">Search</button>
+        </div>
+</nav>
+<section class="slide-show background"> 
+    <div class="slideshow-container">
+        <div class="mySlides fade ">
+          <div class="numbertext">1 / 3</div>
+          <img src="https://img1.hotstarext.com/image/upload/f_auto,t_web_m_1x/sources/r1/cms/prod/1527/571527-h" style="width:100%">
+          <div class="text">MISSION MANGAL</div>
+          <button class="slideshow-button"><a href="https://www.youtube.com/embed/rUYWUG2X6Io" class="more" id="videolink">Watch now<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>   
+        </div>
+        
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="https://i.ytimg.com/vi/zFXuhewEKXs/maxresdefault.jpg" style="width:100%">
+          <div class="text">CHICHORE</div>
+          <button class="slideshow-button"><a href="https://www.youtube.com/embed/MQsDNZ06xOk" class="more" id="videolink">Watch now<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>   
+        </div>
+
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="https://i.ytimg.com/vi/WOHszkDahPQ/maxresdefault.jpg" style="width:100%">
+          <div class="text">SNEHITUDU</div>
+          <button class="slideshow-button"><a href="https://www.youtube.com/embed/zVm9IFaAJlo" class="more" id="videolink">Watch now<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>   
+        </div>
+       
+       
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot " onclick="currentSlide(1) "></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        
+      </div> 
+
+      
+
+</section>
+<div class="container">
+    <div class="content-container">
+    <div class="movie-list-container background" id="movies">
+        <h1 class="movie-list-title">MOVIES</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://wallpaperaccess.com/full/4047635.jpg" alt="" >
+                   
+                    <span class="movie-list-item-title">Gabbar Singh</span>
+                    <p class="movie-list-item-desc">A fearless cop with a rebellious attitude takes on a ruthless criminal empire, delivering thrilling action and punchy dialogues that captivate audiences.</p>
+                        <button class="movie-list-item-button"><a href="https://www.youtube-nocookie.com/embed/EztUsjJAh0E" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>   
+                        
+                         <!-- <div id="videostory" class="mfp-hide embed-responsive embed-responsive-21by9">
+        <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/qN3OueBm9F4?autoplay=1" frameborder="0"  allowfullscreen></iframe>
+      </div> -->
+                        <!-- <div class="mfp-hide" id="videostory" style="max-width: 75%; margin: 0 auto;">
+                            <iframe width="813" height="530" src="https://www.youtube.com/embed/US8ePkxYI3E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                        </div> -->
+                        
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://image-resizer-cloud-api.akamaized.net/image/BDB45E67-D4F1-4514-B186-A8C0B4CEBE48/0-16x9.jpg?width=1080" alt="">
+                    <span class="movie-list-item-title">Magadheera</span>
+                    <p class="movie-list-item-desc">Immerse yourself in the epic fantasy romance of 'Magadheera,' a Telugu movie that weaves together reincarnation, valor, and timeless love across centuries, leaving audiences spellbound."</p>
+                        <button class="movie-list-item-button"><a href="https://www.youtube-nocookie.com/embed/G7haVu5g-Qw" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                        
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://images-na.ssl-images-amazon.com/images/S/pv-target-images/2629e44f4579ba62e58a2974c236ef1cd8d27b9c27c69c13b14b05ec98d06f27._UY500_UX667_RI_TTW_.jpg" alt="">
+                    <span class="movie-list-item-title">Dalapati</span>
+                    <p class="movie-list-item-desc">In the gripping Telugu movie 'Dalapathi,' witness the rise of a fearless leader who navigates through power struggles, friendship, and sacrifice, forging an unforgettable legacy in the world of politics.</p>
+                        <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/g77h000fA6c" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                        
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://i.ytimg.com/vi/CbW0xv7UVOs/maxresdefault.jpg" alt="">
+                    <span class="movie-list-item-title">Shiva</span>
+                    <p class="movie-list-item-desc">Experience the riveting tale of a college student turned vigilante in the Telugu movie 'Shiva,' as he takes on corruption and injustice, redefining the meaning of justice and heroism.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/hAPVDS9mvt0" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+
+                    
+                     
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://wallpapers.oneindia.com/ph-1024x768/2015/01/gopala-gopala-wallpaper_142018024500.jpg" alt="">
+                    <span class="movie-list-item-title">Gopala Gopala</span>
+                    <p class="movie-list-item-desc">witness a humorous yet profound clash of ideologies as an atheist and a godman engage in a captivating legal battle with divine consequences.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube-nocookie.com/embed/FQNlo89vgJo" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                     
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://upload.wikimedia.org/wikipedia/en/3/39/Yamadonga.jpg" alt="">
+                    <span class="movie-list-item-title">Yamadonga</span>
+                    <p class="movie-list-item-desc">where a cunning thief's misadventures lead to an otherworldly encounter with the lord of death, blending humor, drama, and divine justice.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/GuKfZ6PIvxU" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                     
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://m.media-amazon.com/images/M/MV5BYzdiNjdmMjYtZGZhYy00OTNlLWI5MjAtOGJkZWI4ZDE3MGExXkEyXkFqcGdeQXVyNzE0MzIyOTI@._V1_.jpg" alt="">
+                    <span class="movie-list-item-title">Pokiri</span>
+                    <p class="movie-list-item-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+                        hic fugit similique accusantium.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/F1mTF3Ayy8g" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                     
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>  
+
+    <div class="movie-list-container background " id="music">
+        <h1 class="movie-list-title">MUSIC</h1>
+        <div class="movie-list-wrapper">
+            <div class="movie-list">
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://m.timesofindia.com/photo/68775722/size-187620/68775722.jpg" alt="">
+                    <span class="movie-list-item-title">Vaaste</span>
+                    <p class="movie-list-item-desc">A heartwarming and melodious love song that beautifully captures the essence of young love and its emotional rollercoaster.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/BBAyRBTfsOU" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                     
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://www.naasongs.co/wp-content/uploads/2014/03/Panjaa-2011-250x250.jpg" alt="">
+                    <span class="movie-list-item-title">Panja</span>
+                    <p class="movie-list-item-desc">A foot-tapping and energetic Telugu song that exudes youthful charm and celebrates the spirit of freedom and joy.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/jFO0y_-w0yw" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                     
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://timesofindia.indiatimes.com/photo/msid-93858905,imgsize-164671.cms" alt="">
+                    <span class="movie-list-item-title">Neeto unte chalu</span>
+                    <p class="movie-list-item-desc">A soul-stirring Telugu song that expresses the depths of love, promising to be a companion through every moment of life's journey.</p>
+                  <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/o19q-7-nIyA" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                </div>
+                
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://www.mjvibe.com/wp-content/uploads/2023/03/TDCAU-to-1-B-1.jpg" alt="">
+                    <span class="movie-list-item-title">They dont care about us</span>
+                    <p class="movie-list-item-desc">A powerful and provocative song by Michael Jackson that highlights social issues and calls for unity and justice.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/66Xk5ArruUU" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                     
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://i.ytimg.com/vi/2OvZtdwe30s/maxresdefault.jpg" alt="">
+                    <span class="movie-list-item-title">Kaamoshiyaan</span>
+                    <p class="movie-list-item-desc">A hauntingly beautiful song that captures the emotions of love, longing, and solitude in its mesmerizing melody.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/Mv3SZDP7QUo" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                     
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://pagalfree.com/images/128Bum%20Bum%20Bole%20-%20Taare%20Zameen%20Par%20128%20Kbps.jpg" alt="">
+                    <span class="movie-list-item-title">Bum Bum Bole</span>
+                    <p class="movie-list-item-desc">An infectiously joyful and playful song that celebrates the innocence and exuberance of childhood.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/NJ1NIIdHhXs" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                    
+                </div>
+                <div class="movie-list-item">
+                    <img class="movie-list-item-img" src="https://i.ytimg.com/vi/_PtH3QraTz0/maxresdefault.jpg" alt="">
+                    <span class="movie-list-item-title">okey oka lokam</span>
+                    <p class="movie-list-item-desc">A hauntingly beautiful song that captures the emotions of love, longing, and solitude in its mesmerizing melody.</p>
+                     <button class="movie-list-item-button"><a href="https://www.youtube.com/embed/hP93gA8F6sM" class="more" id="videolink">Watch<i class="fa fa-play-circle" aria-hidden="true" >&nbsp;</i></a></button>
+                    
+                </div>
+            </div>
+            <i class="fas fa-chevron-right arrow"></i>
+        </div>
+    </div>  
+ </div>
+</div>
+
+<section class="about contact background">
+<!-- Tables -->
+<div class="firstHalf">
+<h1 class="abouttitle" id="about">ABOUT</h1>
+<h3>Designed by:</h3>
+<br>
+<div class="abouttext">
+<P><strong>KARRA VINAY KUMAR,</strong> Student of Bachelors of Technology in the stream of Electronics and Communication Engineering in National Institute of Technology, Patna.</P>
+<br>
+<p>Please provide your valuable information with us!</p>
+<br>
+<p>Thank you, Signing off :) Bye Bye..</p>
+</div>
+
+</div>
+<div class="verticalline"></div>
+<div class="secondHalf">
+<h1 class="contacttitle" id="contact">Contact Us</h1>
+<div class="form">
+    <input type="text" class="form-input" name="name" id="name" placeholder="Enter Your Name">
+    <input type="text" class="form-input" name="phone" id="phone" placeholder="Enter Your Phone">
+    <input type="email" class="form-input" name="email" id="email" placeholder="Enter Your email">
+    
+        <textarea class="form-input" name="text" id="text" cols="30" rows="2" placeholder="Elaborate your concern"></textarea>
+    <button class="btn btn-dark btn-sm">Submit</button>
+</div>
+</div>
+</section>
+
+<footer>
+    <p class="text-footer">
+        Copyright &copy;2023 - www.Dada_Dad.com - All rights reserved
+    </p>
+</footer>
+<!-- <script src="/Dada_Dad/Dada_Dad.js"></script> -->
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+
+showSlides();
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+
+const arrows = document.querySelectorAll(".arrow");
+const movieLists = document.querySelectorAll(".movie-list");
+
+arrows.forEach((arrow, i) => {
+  const itemNumber = movieLists[i].querySelectorAll("img").length;
+  let clickCounter = 0;
+  arrow.addEventListener("click", () => {
+    const ratio = Math.floor(window.innerWidth / 270);
+    clickCounter++;
+    if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
+      movieLists[i].style.transform = `translateX(${
+        movieLists[i].computedStyleMap().get("transform")[0].x.value - 300
+      }px)`;
+    } else {
+      movieLists[i].style.transform = "translateX(0)";
+      clickCounter = 0;
+    }
+  });
+
+  console.log(Math.floor(window.innerWidth / 270));
+});
+
+const items = document.querySelectorAll(
+  ".container,.movie-list-title"
+);
+
+$('#videolink').magnificPopup({
+        type: 'inline',
+        midClick: true
+});
+</script>
+</body>
+</html>
